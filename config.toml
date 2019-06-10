@@ -1,23 +1,29 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "A Hugo website"
-theme = "hugo-lithium"
+title = "COGMO website"
+theme = "indigo"
 googleAnalytics = ""
-disqusShortname = ""
+#disqusShortname = "COGMO"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
 
 [[menu.main]]
-    name = "About"
+    name = "About COGMO"
     url = "/about/"
 [[menu.main]]
-    name = "GitHub"
-    url = "https://github.com/rstudio/blogdown"
+    name = "Our doctors"
+    url ="/doctors/"
 [[menu.main]]
-    name = "Twitter"
-    url = "https://twitter.com/rstudio"
+    name = "Referrals"
+    url = "/referrals/"
+[[menu.main]]
+    name = "Contacts"
+    url = "/contacts/"
+[[menu.main]]
+    name = "Useful links"
+    url = "/links/"
 
 [params]
     description = "A website built through Hugo and blogdown."
@@ -32,11 +38,12 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     MathJaxVersion = "2.7.5"
 
     # path to the favicon, under "static"
-    favicon = "favicon.ico"
+    #favicon = "favicon.ico"
+    favicon = "ddembe.jpg"
 
     [params.logo]
-    url = "logo.png"
+    url = "ddembe.jpg"
     width = 50
     height = 50
-    alt = "Logo"
+    alt = "COGMO Blog"
 

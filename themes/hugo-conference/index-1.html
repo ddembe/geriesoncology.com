@@ -1,0 +1,38 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Unknown </title></head><body>
+<h1 id="hugo-conference">Hugo conference</h1>
+<p>Hugo conference is a theme for conferences/events based on the original <a href="https://github.com/braziljs/conf-boilerplate/">conf-boilerplate theme</a> by <a href="http://braziljs.org/">BrazilJS Foundation</a> and his many contributors.</p>
+<h2 id="building-my-conference-site-from-scratch">Building my conference site from scratch</h2>
+<ol>
+<li>Install <a href="https://gohugo.io">Hugo</a></li>
+<li>
+<p>Create a new site by running:</p>
+<pre><code>hugo new site my-conf
+cd my-conf
+git clone https://github.com/jweslley/hugo-conference themes/hugo-conference
+rm -f config.toml
+cp themes/hugo-conference/exampleSite/config.yml .
+</code></pre>
+</li>
+<li>
+<p>It's done. Just start Hugo server to see it live!</p>
+<pre><code>hugo server --watch
+</code></pre>
+</li>
+</ol>
+<h2 id="customizing-the-site">Customizing the site</h2>
+<p>All the site information can be found in the <code>config.yml</code> file. Just edit it to make changes.
+By default, the site have the following sections:</p>
+<ul>
+<li>About - to describe what's the main goal of your event.</li>
+<li>Location - to show where it's going to happen through Google Maps.</li>
+<li>Speakers - to list information about speakers.</li>
+<li>Schedule - to show the agenda.</li>
+<li>Sponsors - to show the brand of your sponsors.</li>
+<li>Partners - to show the brand of your partners.</li>
+</ul>
+<p>Ps: It's important to change the <code>baseurl</code> property from <code>config.yml</code> file in order to reflect your settings.</p>
+<h3 id="google-maps">Google Maps</h3>
+<p>Google now requires a Google Maps JavaScript API Key to show maps. You can obtain your key <a href="https://developers.google.com/maps/documentation/javascript/get-api-key">here</a>. Then set your API key in the <code>GoogleMapsKey</code> param in the <code>config.yml</code> file.</p>
+<h2 id="license">License</h2>
+<p>MIT, see <a href="https://github.com/jweslley/hugo-conference/blob/master/LICENSE">LICENSE</a>.</p>
+</body></html>
